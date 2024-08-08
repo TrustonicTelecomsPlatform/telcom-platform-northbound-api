@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'java-library'
+}
+
+group 'com.trustonic.client-api'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.apache.commons', name: 'commons-csv', version: '1.5'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
