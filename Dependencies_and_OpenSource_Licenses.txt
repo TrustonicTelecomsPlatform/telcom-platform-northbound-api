@@ -1,0 +1,43 @@
+alps-ttp3-northbound-api-client_XXXXXXX.YY.jar(Trustonic)
+		--	This needs to get from Trustonic to run this code to execute and run each file.
+            	-- 	This jar file contains dependencies as below.
+                	1) spring-boot-starter-web (Apache 2.0 License)
+                    		--  Starter for building web, including RESTful, applications using Spring MVC. Uses Tomcat as the default embedded container
+                	2)  jackson-databind (Apache 2.0 License)
+                    		--  General data-binding functionality for Jackson: works on core streaming API
+                	3)  lombok (MIT License)
+                    		--  Lombok is a Java library that provides annotations to simplify Java development by automating the generation of 					    boilerplate code. Key features include automatic generation of getters, setters, equals, hashCode, and toString methods, 				    as well as a facility for automatic resource management. It aims to reduce the amount of manual coding, thereby 					    streamlining the codebase and reducing potential for errors.
+                	4)  httpclient (Apache 2.0 License)
+                    		--  HTTPClient provides an efficient, up-to-date, and feature-rich package implementing the client side of the most recent 				    HTTP standards and recommendations.
+                    5)  org.apache.commons  (Apache 2.0 License)
+                            --  Apache Commons Lang, a package of Java utility classes for the classes that are in java.lang's hierarchy, or are considered to be so standard as to justify existence in java.lang.
+Note:
+Here XXXXXXX refres to the respective envirounment to test(Either it should PARTNERS/PLAYGROUND or PROD), YY means the respective version.
+
+Pre-requisites:
+1. Gradle and JDK versions are mentioned below for reference.
+Incase if JDK is used other than below then needs to request Trustonic to provide specific version so the dependent jar file will be prepared and shared on need basis. 
+
+------------------------------------------------------------
+Gradle 7.4.1
+------------------------------------------------------------
+
+Build time:   2022-03-09 15:04:47 UTC
+Revision:     36dc52588e09b4b72f2010bc07599e0ee0434e2e
+
+Kotlin:       1.5.31
+Groovy:       3.0.9
+Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
+JVM:          17.0.3 (Oracle Corporation 17.0.3+8-LTS-111)
+OS:           Windows 11 10.0 amd64
+
+2. alps-ttp3-northbound-api-client_XXXX-X.X.jar File which needs to get from respective trustonic counter part. After getting this file pls keep it in libs folder of project.
+Incase if want to keep this file in different location make sure to change path in build.gradle file to keep actual location.
+3. Any IDE or tool for java coding.
+4. Once code is compiled refer examples mentioned as methods and try to take that sample code and try to run like normal java program to see results.
+5. Configure project.properties file in resources folder for base-folder, tenant_name and api_key properties.
+
+Note:
+Here every operation example is written as a method and this method takes input file from configuration path mentioned in project.properties. So first configure this file to run and see sample output.
+
+
