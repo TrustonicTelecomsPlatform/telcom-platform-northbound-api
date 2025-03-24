@@ -31,7 +31,7 @@ Ex: if gradlew is gradle file run below command to build project.
 After compilation success start refer and use the examples to integrate into Trustonic Telecom Platform North Bound API's.
 
 More details about Trustonic North Bound API are mentioned below for reference. These examples are wrapper code the below residing API's.
-[North Bound API Details](https://productbrochure.playground-trustonic.com/categories/product/north-bound-api)
+[North Bound API Details](https://productbrochure.cloud.trustonic.com/categories/product/north-bound-api)
 
 ####Note: Above link is accessable with only with valid Trustonic credentials. 
 
