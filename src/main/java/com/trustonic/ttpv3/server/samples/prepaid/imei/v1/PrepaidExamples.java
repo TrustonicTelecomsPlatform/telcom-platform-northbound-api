@@ -8,58 +8,58 @@
  * entered into with TRUSTONIC LIMITED. This software may be subject to
  * export or import laws in certain countries.
  */
-package com.trustonic.ttpv3.server.samples.prepaid.imei;
+package com.trustonic.ttpv3.server.samples.prepaid.imei.v1;
 
 import com.trustonic.ttpv3.client.client.PrepaidOperations;
 import com.trustonic.ttpv3.client.client.impl.PrepaidOperationsImpl;
 import com.trustonic.ttpv3.client.enums.CommonEnums;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidActivateServicesRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidDeActivateServicesRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidListDevicesRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidLockDevicesRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidLockMessageDevicesRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidNotifyDevicesRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidReleaseDevicesRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidReloadDevicesRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidServiceStatusRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidUnLockDevicesRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidUpdateDevicesRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidUploadDevicesRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.PrepaidUploadStatusRequest;
-import com.trustonic.ttpv3.client.model.prepaid.request.item.PrepaidActivateServiceItem;
-import com.trustonic.ttpv3.client.model.prepaid.request.item.PrepaidDeActivateServiceItem;
-import com.trustonic.ttpv3.client.model.prepaid.request.item.PrepaidListDeviceRequestItem;
-import com.trustonic.ttpv3.client.model.prepaid.request.item.PrepaidLockDeviceRequestItem;
-import com.trustonic.ttpv3.client.model.prepaid.request.item.PrepaidLockMessageDeviceRequestItem;
-import com.trustonic.ttpv3.client.model.prepaid.request.item.PrepaidNotifyDeviceRequestItem;
-import com.trustonic.ttpv3.client.model.prepaid.request.item.PrepaidReleaseDeviceRequestItem;
-import com.trustonic.ttpv3.client.model.prepaid.request.item.PrepaidReloadDeviceRequestItem;
-import com.trustonic.ttpv3.client.model.prepaid.request.item.PrepaidUnLockDeviceRequestItem;
-import com.trustonic.ttpv3.client.model.prepaid.request.item.PrepaidUpdateDeviceRequestItem;
-import com.trustonic.ttpv3.client.model.prepaid.request.item.PrepaidUploadRequestItem;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidActivateServicesResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidDeActivateServicesResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidListDevicesResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidLockDevicesResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidLockMessageDevicesResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidNotifyDevicesResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidReleaseDevicesResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidReloadDevicesResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidServiceStatusResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidUnLockDevicesResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidUpdateDevicesResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidUploadDevicesResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.PrepaidUploadStatusResponse;
-import com.trustonic.ttpv3.client.model.prepaid.response.item.PrepaidListDeviceResponseItem;
-import com.trustonic.ttpv3.client.model.prepaid.response.item.PrepaidLockDeviceResponseItem;
-import com.trustonic.ttpv3.client.model.prepaid.response.item.PrepaidLockMessageDeviceResponseItem;
-import com.trustonic.ttpv3.client.model.prepaid.response.item.PrepaidNotifyDeviceResponseItem;
-import com.trustonic.ttpv3.client.model.prepaid.response.item.PrepaidReleaseDeviceResponseItem;
-import com.trustonic.ttpv3.client.model.prepaid.response.item.PrepaidReloadDeviceResponseItem;
-import com.trustonic.ttpv3.client.model.prepaid.response.item.PrepaidServiceStatusResponseItem;
-import com.trustonic.ttpv3.client.model.prepaid.response.item.PrepaidUnLockDeviceResponseItem;
-import com.trustonic.ttpv3.client.model.prepaid.response.item.PrepaidUpdateDeviceResponseItem;
-import com.trustonic.ttpv3.client.model.prepaid.response.item.PrepaidUploadStatusResponseItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidActivateServicesRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidDeActivateServicesRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidListDevicesRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidLockDevicesRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidLockMessageDevicesRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidNotifyDevicesRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidReleaseDevicesRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidReloadDevicesRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidServiceStatusRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidUnLockDevicesRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidUpdateDevicesRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidUploadDevicesRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.PrepaidUploadStatusRequest;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.item.PrepaidActivateServiceItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.item.PrepaidDeActivateServiceItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.item.PrepaidListDeviceRequestItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.item.PrepaidLockDeviceRequestItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.item.PrepaidLockMessageDeviceRequestItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.item.PrepaidNotifyDeviceRequestItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.item.PrepaidReleaseDeviceRequestItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.item.PrepaidReloadDeviceRequestItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.item.PrepaidUnLockDeviceRequestItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.item.PrepaidUpdateDeviceRequestItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.request.item.PrepaidUploadRequestItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidActivateServicesResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidDeActivateServicesResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidListDevicesResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidLockDevicesResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidLockMessageDevicesResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidNotifyDevicesResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidReleaseDevicesResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidReloadDevicesResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidServiceStatusResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidUnLockDevicesResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidUpdateDevicesResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidUploadDevicesResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.PrepaidUploadStatusResponse;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.item.PrepaidListDeviceResponseItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.item.PrepaidLockDeviceResponseItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.item.PrepaidLockMessageDeviceResponseItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.item.PrepaidNotifyDeviceResponseItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.item.PrepaidReleaseDeviceResponseItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.item.PrepaidReloadDeviceResponseItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.item.PrepaidServiceStatusResponseItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.item.PrepaidUnLockDeviceResponseItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.item.PrepaidUpdateDeviceResponseItem;
+import com.trustonic.ttpv3.client.model.prepaid.v1.response.item.PrepaidUploadStatusResponseItem;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -81,7 +81,7 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 /**
- * This class describes examples and usage of Trustonic API
+ * This class describes examples and usage of V1 Trustonic NorthBound API
  */
 public class PrepaidExamples {
     private static final Properties props;
@@ -158,7 +158,7 @@ public class PrepaidExamples {
                     imeiInfo.setAdditionalRemarks(record.get("ADDITIONAL_REMARKS"));
                 }
                 if (null != record.get("DEACTIVATE_REASON") && 0 < record.get("DEACTIVATE_REASON").length()) {
-                    imeiInfo.setDeactivateReason(record.get("DEACTIVATE_REASON"));
+                    imeiInfo.setDeactivateReason(CommonEnums.DeactiveReason.valueOf(record.get("DEACTIVATE_REASON")));
                 }
                 deActivateServiceDevicesList.add(imeiInfo);
             }
@@ -296,7 +296,7 @@ public class PrepaidExamples {
                     imeiInfo.setDeviceUid(record.get("DEVICE_ID").trim());
                 }
                 if (null != record.get("IMEI2") && 0 < record.get("IMEI2").length()) {
-                    imeiInfo.setIMEI2(record.get("IMEI2"));
+                    imeiInfo.setImei2(record.get("IMEI2"));
                 }
                 if (null != record.get("DEVICE_TYPE") && 0 < record.get("DEVICE_TYPE").length()) {
                     imeiInfo.setDeviceType(CommonEnums.UpdateDeviceDeviceType.valueOf(record.get("DEVICE_TYPE")));
@@ -675,7 +675,7 @@ public class PrepaidExamples {
                 log.info("Upload Prepaid Device Details for " + imeiInfo.toString());
             }
         } catch (Throwable ex) {
-            log.severe("Exception occurred while forming device query request. Exception " + ex);
+            log.severe("Exception occurred while forming device upload request. Exception " + ex);
         }
         if (0 < uploadDevicesList.
                 size()) {
@@ -704,7 +704,7 @@ public class PrepaidExamples {
         PrepaidUploadStatusRequest uploadStatusReq;
         ResponseEntity<PrepaidUploadStatusResponse> uploadStatusResp;
         while (isProcessingInProgress) {
-            uploadStatusReq = PrepaidUploadStatusRequest.builder().uploadId(uploadId).build();
+            uploadStatusReq = PrepaidUploadStatusRequest.builder().uploadId(uploadId.toString()).build();
             uploadStatusResp = prepaidOperations.getPrepaidUploadStatus(props.getProperty(PROP_API_KEY), uploadStatusReq);
             log.info("Prepaid Upload Devices Status Response Code " + uploadStatusResp.getStatusCode());
             log.info("Prepaid Upload Devices Status Response Response Headers " + uploadStatusResp.getHeaders());
