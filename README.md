@@ -79,6 +79,8 @@ More details about Trustonic North Bound API are mentioned below for reference. 
         10.  activateServiceDevicesExample
         11.  deActivateServiceDevicesExample
 
+**Note:** A `webhook-receiver` sample is also included in the `samples` folder to help you test and debug webhook integrations.
+
 These Examples written based on csv file input. 
 This examples code can be used to integrate these API's directly into any Java based system. 
 Parameter details needs to be referanced from Trustonic API document specification shared.  
